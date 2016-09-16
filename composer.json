@@ -1,0 +1,22 @@
+{
+  "name": "iconic/facebook",
+  "description": "Laravel Service Provider wrapper for Facebook graph sdk",
+  "type": "Laravel Service Provider",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dimkasta",
+      "email": "dimkasta@yahoo.gr"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4",
+    "facebook/graph-sdk": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Illuminate\\": "src/Iconic/"
+    }
+  }
+}
