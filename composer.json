@@ -1,7 +1,6 @@
 {
   "name": "iconic/facebook",
   "description": "Laravel Service Provider wrapper for Facebook graph sdk",
-  "type": "Laravel Service Provider",
   "license": "MIT",
   "authors": [
     {
@@ -16,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Illuminate\\": "src/Iconic/"
+      "Iconic\\": "src/Iconic/"
     }
   }
 }
