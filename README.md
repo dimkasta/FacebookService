@@ -18,7 +18,7 @@ So we add this in the relevant areas
 
 **Provider**
 
-```Iconic\Facebook\FacebookServiceProvider::class,```
+```Iconic\Facebook\FacebookServiceProvider::class, ```
 
 **Facade Alias:**
 
