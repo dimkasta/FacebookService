@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Iconic\\": "src/Iconic/"
+      "Iconic\\Facebook\\": "src/Iconic/Facebook/"
     }
   }
 }

@@ -48,6 +48,6 @@ class FacebookServiceController extends Controller
 	{
 		$request->session()->flush();
 		$request->session()->regenerate();
-		return redirect('facebook-login');
+		return redirect(config('facebook.login-url'));
     }
 }

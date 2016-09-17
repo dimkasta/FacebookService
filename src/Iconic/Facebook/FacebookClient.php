@@ -14,12 +14,6 @@ class FacebookClient
 
 	public function __construct()
 	{
-//		session_start();
-		//$token = session('facebookUserAccessToken');
-//		if (session_status() == PHP_SESSION_NONE) {
-//			session_start();
-//		}
-
 		$this->client = new Facebook([
 			'app_id' => config('facebook.app_id'),
 			'app_secret' => config('facebook.app_secret'),
