@@ -58,7 +58,7 @@ The file is copied inside the config folder. Edit it and add your own app ID and
  As soon as you do that, the provider hits the /me endpoint and retrieves your name, just to 
  check that everything is ok.
  
- **If you keep seeing the login link, this means that your session settings are off. And check that the framework can write in cache and session folders.**
+ If you keep seeing the login link, this means that your session settings are off. And check that the framework can write in cache and session folders.
  
  ## Licenced under MIT
  
