@@ -39,7 +39,7 @@ Iconic\Facebook\FacebookServiceProvider::class,
 
 **Publish Views and Configuration Files**
 
-```PHP
+```Bash
 php artisan vendor:publish 
 ```
 
@@ -47,10 +47,8 @@ php artisan vendor:publish
 
 The file facebook.php is copied inside the config folder. 
 Edit it with your own app ID and secret from your Facebook Application.
- 
  In this file you can also change the routes, required permissions, the views used to display the login link etc.
 
- 
  ## Verify that everything works ok
  
  Navigate to /facebook-login and you should see a link to Log into FB.
