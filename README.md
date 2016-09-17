@@ -16,7 +16,7 @@ the configuration files, update composer, and vendor-publish the configuration f
 
 So we add this in the relevant areas
 
-**Provider:**
+**Provider**
 
 ```Iconic\Facebook\FacebookServiceProvider::class,```
 
