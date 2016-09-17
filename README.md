@@ -22,16 +22,16 @@ So we add this in the relevant areas
 
 **Facade Alias:**
 
-```'Facebook' => Iconic\Facebook\Facades\FacebookClient::class,```
+```'Facebook' => Iconic\Facebook\Facades\FacebookClient::class, ```
 
 
 **DO NOT** forget to update composer's autoload with
 
-```composer dump-autoload -o```
+```composer dump-autoload -o ```
 
 **Publish Views and Configuration Files**
 
-```php artisan vendor:publish```
+```php artisan vendor:publish ```
 
 **Facebook.php  configuration file**
 
