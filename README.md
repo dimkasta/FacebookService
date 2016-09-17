@@ -20,7 +20,7 @@ So we add this in the relevant areas
 
 ```Iconic\Facebook\FacebookServiceProvider::class, ```
 
-**Facade Alias:**
+**Facade Alias**
 
 ```'Facebook' => Iconic\Facebook\Facades\FacebookClient::class, ```
 
@@ -50,7 +50,7 @@ The file is copied inside the config folder. Edit it and add your own app ID and
  
  **If you keep seeing the login link, this means that your session settings are off. And check that the framework can write in cache and session folders.**
  
- ##Licenced under MIT
+ ## Licenced under MIT
  
  Copyright (c) 2016 Kastaniotis Dimitris (dimkasta)
  
