@@ -21,15 +21,11 @@ class FacebookServiceController extends Controller
 	public function login()
 	{
 		$url = \Facebook::getLoginActionUrl();
-//dd($url);
+
 		if(\Facebook::isUserAuthenticated()) {
 			$user = \Facebook::get("/me")->getGraphUser();
-
-//			dd($user);
 		}
-//
-		return view('facebook.button')->with(compact('url', 'user'));
-
+		return view(config('facebook.login-view'))->with(compact('url', 'user'));
     }
 
 	/**
@@ -37,14 +33,9 @@ class FacebookServiceController extends Controller
 	 *
 	 * @return null
 	 */
-	public function loginCallback()
+	public function loginCallback(Request $request)
 	{
-		try {
-			\Facebook::receiveUserAccessToken();
-		}
-		catch (FacebookSDKException $e) {
-//			return redirect(config('facebook.login-url'));
-		}
+		\Facebook::receiveUserAccessToken($request);
 		return redirect(config('facebook.login-url'));
     }
 

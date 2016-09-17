@@ -4,6 +4,7 @@ namespace Iconic\Facebook;
 
 use Facebook\Authentication\AccessToken;
 use Facebook\Facebook;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
 class FacebookClient
@@ -13,9 +14,11 @@ class FacebookClient
 
 	public function __construct()
 	{
-		if (session_status() == PHP_SESSION_NONE) {
-			session_start();
-		}
+//		session_start();
+		//$token = session('facebookUserAccessToken');
+//		if (session_status() == PHP_SESSION_NONE) {
+//			session_start();
+//		}
 
 		$this->client = new Facebook([
 			'app_id' => config('facebook.app_id'),
@@ -36,9 +39,11 @@ class FacebookClient
 	 *
 	 * @return null
 	 */
-	public function receiveUserAccessToken()
+	public function receiveUserAccessToken(Request $request)
 	{
-		session(["facebookUserAccessToken" => $this->helper->getAccessToken()]);
+		$this->helper->getPersistentDataHandler()->set('state', $request->state);
+		$token = $this->helper->getAccessToken();
+		session(["facebookUserAccessToken" => $token->getValue()]);
 	}
 
 	/**

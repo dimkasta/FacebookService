@@ -13,7 +13,10 @@ class FacebookServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-
+		$this->publishes([
+			__DIR__.'/facebook.php' => config_path('facebook.php'),
+			__DIR__.'/button.blade.php' => base_path('resources/views/button.blade.php'),
+		]);
 	}
 
     /**
