@@ -1,8 +1,6 @@
 # Facebook Service Provider
 A Graph API wrapper for Laravel 5.3
 
-Stability is still dev since this is a pretty fresh package
-
 ## Installation
 Use composer to pull the package with
 
