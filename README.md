@@ -6,7 +6,7 @@ Stability is still dev since this is a pretty fresh package
 ## Installation
 Use composer to pull the package with
 
-``` 
+```Bash
 composer require iconic/facebook:dev-master
 ```
 
@@ -20,37 +20,36 @@ So we add this in the relevant areas
 
 **Provider**
 
-``` 
+```PHP
 Iconic\Facebook\FacebookServiceProvider::class, 
 ```
 
 **Facade Alias**
 
-``` 
+```PHP
 'Facebook' => Iconic\Facebook\Facades\FacebookClient::class, 
 ```
 
 
 **DO NOT** forget to update composer's autoload with
 
-```
+```Bash
  composer dump-autoload -o 
  ```
 
 **Publish Views and Configuration Files**
 
-``` 
+```PHP
 php artisan vendor:publish 
 ```
 
 **Configuration file**
 
-The file facebook.php is copied inside the config folder. Edit it and add your own app ID and 
- app secrets from your Facebook Application.
+The file facebook.php is copied inside the config folder. 
+Edit it with your own app ID and secret from your Facebook Application.
  
- In this file you can also change the routes, required permissions, the view used to display the 
- login link etc.
- 
+ In this file you can also change the routes, required permissions, the views used to display the login link etc.
+
  
  ## Verify that everything works ok
  
@@ -61,7 +60,15 @@ The file facebook.php is copied inside the config folder. Edit it and add your o
  
  If you keep seeing the login link, this means that your session settings are off. And check that the framework can write in cache and session folders.
  
- ## Licenced under MIT
+ ## Usage
+ 
+ Just reference the Facade and start sending queries.
+ 
+ ```PHP
+ Facebook::get('/me');
+ ```
+ 
+ # Licenced under MIT
  
  Copyright (c) 2016 Kastaniotis Dimitris (dimkasta)
  
