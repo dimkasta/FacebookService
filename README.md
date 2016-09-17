@@ -6,7 +6,9 @@ Stability is still dev since this is a pretty fresh package
 ## Installation
 Use composer to pull the package with
 
-```composer require iconic/facebook:dev-master```
+``` 
+composer require iconic/facebook:dev-master
+```
 
 This will also pull the current version of Facebook's graph PHP SDK.
 
@@ -18,20 +20,28 @@ So we add this in the relevant areas
 
 **Provider**
 
-```Iconic\Facebook\FacebookServiceProvider::class, ```
+``` 
+Iconic\Facebook\FacebookServiceProvider::class, 
+```
 
 **Facade Alias**
 
-```'Facebook' => Iconic\Facebook\Facades\FacebookClient::class, ```
+``` 
+'Facebook' => Iconic\Facebook\Facades\FacebookClient::class, 
+```
 
 
 **DO NOT** forget to update composer's autoload with
 
-```composer dump-autoload -o ```
+```
+ composer dump-autoload -o 
+ ```
 
 **Publish Views and Configuration Files**
 
-```php artisan vendor:publish ```
+``` 
+php artisan vendor:publish 
+```
 
 **Facebook.php  configuration file**
 
@@ -52,7 +62,7 @@ The file is copied inside the config folder. Edit it and add your own app ID and
  
  ## Licenced under MIT
  
- Copyright (c) 2016 Kastaniotis Dimitris (dimkasta)
+ **Copyright (c) 2016 Kastaniotis Dimitris (dimkasta)**
  
  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  
