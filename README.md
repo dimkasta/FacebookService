@@ -57,7 +57,7 @@ The file facebook.php is copied inside the config folder. Edit it and add your o
  Navigate to /facebook-login and you should see a link to Log into FB.
  
  As soon as you do that, the provider hits the /me endpoint and retrieves your name, just to 
- check that everything is ok.
+ check that everything is ok. 
  
  If you keep seeing the login link, this means that your session settings are off. And check that the framework can write in cache and session folders.
  
